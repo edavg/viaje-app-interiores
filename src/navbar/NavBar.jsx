@@ -9,11 +9,11 @@ const LogoutButton = () => {
     const { deslogearme } = useContext(Contexto);
   
     const handleLogout = () => {
-      navegacion('login', { replace: true });
+      navegacion('/login', { replace: true });
       deslogearme();
     };
   
-    return <button className="logout-button" onClick={handleLogout}>Logout</button>;
+    return <button className="logout-button" onClick={handleLogout}>Salir</button>;
   };
   
   const NavBar = () => {
